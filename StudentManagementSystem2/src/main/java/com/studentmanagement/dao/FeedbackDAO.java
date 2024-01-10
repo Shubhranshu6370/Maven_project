@@ -98,12 +98,4 @@ public class FeedbackDAO {
 			System.out.println(feedback);
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-
 }
