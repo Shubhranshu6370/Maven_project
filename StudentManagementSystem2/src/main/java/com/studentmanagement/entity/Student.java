@@ -71,8 +71,4 @@ public class Student {
 		this.phone = phone;
 		this.dateOfBirth = dateOfBirth;
 	}
-
-	
-	
-	
 }
