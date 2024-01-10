@@ -45,7 +45,4 @@ public class Course {
 		this.courseTitle = courseTitle;
 		this.credits = credits;
 	}
-	
-	
-	
 }
