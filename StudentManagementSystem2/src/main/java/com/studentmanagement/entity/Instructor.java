@@ -45,7 +45,4 @@ public class Instructor {
 		this.lastName = lastName;
 		this.email = email;
 	}
-	
-	
-	
 }
