@@ -30,37 +30,37 @@ public class StudentApp {
 			FeedbackDAO feedbackDAO = new FeedbackDAO(session);
 			
 			//add new student details
-//			Student std1 = new Student("Rohit", "Dey", "rohit@gmail.com", "Male", "9864578962",
-//			LocalDate.parse("2003-01-07"));
-//			Student std2 = new Student("Deeptimayee", "Kisan", "deeptimayee@gmail.com", "Female", "7201563248",
-//			LocalDate.parse("2002-04-17"));
-//			
-//			studentDao.saveStudent(std1);
-//			studentDao.saveStudent(std2);
-//			
-//			//add some feedbacks
-//			Feedback feed1 = new Feedback(LocalDate.now(), "John Doe", "Session was good", std1);
-//			Feedback feed2 = new Feedback(LocalDate.now(), "Derek Smith", "Properly explained", std1);
-//			Feedback feed3 = new Feedback(LocalDate.now(), "John Doe", "Properly explained", std2);
-//			
-//			feedbackDAO.saveFeedback(feed1);
-//			feedbackDAO.saveFeedback(feed2);
-//			feedbackDAO.saveFeedback(feed3);
-//			
-//			//fetch the list of teachers for which a specific student has given feedback
-//			System.out.println("List of teachers for which a specific student has given feedback:");
-//			String studentId = "S101";
-//			System.out.println();
-//			feedbackDAO.findListOfTeachers(studentId);
-//			
-//			System.out.println();
-//			
-//			//fetch the feedback recevied by an instructor given by a student	
-//			feedbackDAO.findFeedbackForSpecificInsByStudent(studentId, "Derek Smith");
-//	
-//			
-//			//calling the method to fetch the list of students who have provided feedbacks
-//			studentDao.getStudentsWithFeedback();
+			Student std1 = new Student("Rohit", "Dey", "rohit@gmail.com", "Male", "9864578962",
+			LocalDate.parse("2003-01-07"));
+			Student std2 = new Student("Deeptimayee", "Kisan", "deeptimayee@gmail.com", "Female", "7201563248",
+			LocalDate.parse("2002-04-17"));
+			
+			studentDao.saveStudent(std1);
+			studentDao.saveStudent(std2);
+			
+			//add some feedbacks
+			Feedback feed1 = new Feedback(LocalDate.now(), "John Doe", "Session was good", std1);
+			Feedback feed2 = new Feedback(LocalDate.now(), "Derek Smith", "Properly explained", std1);
+			Feedback feed3 = new Feedback(LocalDate.now(), "John Doe", "Properly explained", std2);
+			
+			feedbackDAO.saveFeedback(feed1);
+			feedbackDAO.saveFeedback(feed2);
+			feedbackDAO.saveFeedback(feed3);
+			
+			//fetch the list of teachers for which a specific student has given feedback
+			System.out.println("List of teachers for which a specific student has given feedback:");
+			String studentId = "S101";
+			System.out.println();
+			feedbackDAO.findListOfTeachers(studentId);
+			
+			System.out.println();
+			
+			//fetch the feedback recevied by an instructor given by a student	
+			feedbackDAO.findFeedbackForSpecificInsByStudent(studentId, "Derek Smith");
+	
+			
+			//calling the method to fetch the list of students who have provided feedbacks
+			studentDao.getStudentsWithFeedback();
 			
 			studentDao.removeStdById("S101");
 			
