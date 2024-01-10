@@ -82,18 +82,18 @@ public class ManagerDAO {
 
 	}
 
-//	public List<Employee> findAllEmployeeByManagerId(int managerId) {
-//        
-//		try {
-//		Manager manager = session.get(Manager.class, managerId);
-//		
-//		if(manager !=null) {
-//			return manager.getEmployees();
-//		}
-//	  }catch(Exception e) {
-//		  e.printStackTrace();
-//	  }
-//		return null;
+	public List<Employee> findAllEmployeeByManagerId(int managerId) {
+       
+		try {
+		Manager manager = session.get(Manager.class, managerId);
+		
+		if(manager !=null) {
+			return manager.getEmployees();
+		}
+	  }catch(Exception e) {
+		  e.printStackTrace();
+	  }
+		return null;
 
 	// method to see which manager is assigned to an employee using employee id
 		public Manager findManagerForEmployee(String empId) {
