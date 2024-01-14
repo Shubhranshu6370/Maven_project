@@ -85,9 +85,7 @@ public class StudentDAO {
 	// method to fetch student details using email
 	public Student findByEmail(String stdEmail) {
 		try {
-//				Student std = session.createQuery("select s from Student s where s.sessionail = :session", Student.class)
-//						.setParameter("session", stdsessionail)
-//						.getSingleResult();
+
 			Student std = session.createQuery("from Student where email = :em", Student.class)
 					.setParameter("em", stdEmail).getSingleResult();
 
